@@ -55,7 +55,8 @@ export default function Login() {
                 placeholder="seu@email.com"
                 className="input-neon w-full px-4 py-[13px] bg-[rgba(230,230,230,0.08)] border rounded-[10px] text-[#E6E6E6] outline-none placeholder:text-[rgba(230,230,230,0.3)] transition-all duration-300"
                 style={{ borderColor: "rgba(230,230,230,0.15)" }}
-                />
+              />
+              
             </div>
 
             {/* Campo senha */}
@@ -69,7 +70,8 @@ export default function Login() {
                     placeholder="••••••••"
                     className="input-neon w-full px-4 py-[13px] bg-[rgba(230,230,230,0.08)] border rounded-[10px] text-[#E6E6E6] outline-none placeholder:text-[rgba(230,230,230,0.3)] transition-all duration-300"
                     style={{ borderColor: "rgba(230,230,230,0.15)" }}
-                    />
+                />
+                
                 <button
                   type="button"
                   className="absolute right-3 top-1/2 -translate-y-1/2 bg-transparent border-none cursor-pointer opacity-40 hover:opacity-80"

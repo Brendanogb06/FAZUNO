@@ -11,8 +11,6 @@ html, body {
   height: 100%;
   width: 100%;
 }
-
-/* bordas laranjas (.blob, .ripple, etc) */
 .input-neon:hover,
 .input-neon:focus {
   border-color: #f1670f !important;
