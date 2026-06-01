@@ -1,7 +1,7 @@
 "use client"; 
 import { useState } from 'react';
 import '../styles/Login.css';
-import { useLogin } from '../Script/useLogin';
+import { useLogin } from '../../Script/Tela_de_perfil';
 import { FaUser } from "react-icons/fa";
 import { FaHammer} from "react-icons/fa";
 
