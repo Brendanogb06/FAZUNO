@@ -76,11 +76,13 @@ export default function NewPassword() {
         className="relative w-screen h-screen overflow-hidden flex items-center justify-center"
         style={{ background: "#0A0B2D", fontFamily: "'DM Sans', sans-serif", color: "#E6E6E6" }}
       >
+        {/* Círculos decorativos */}
         <div className="absolute rounded-full pointer-events-none" style={{ width: 340, height: 340, top: -80, right: 220, background: "rgba(230,230,230,0.06)" }} />
         <div className="absolute rounded-full pointer-events-none" style={{ width: 180, height: 180, top: 60, right: 60, background: "rgba(230,230,230,0.06)" }} />
         <div className="absolute rounded-full pointer-events-none" style={{ width: 90, height: 90, bottom: 100, right: 160, background: "rgba(230,230,230,0.06)" }} />
         <div className="absolute rounded-full pointer-events-none" style={{ width: 55, height: 55, bottom: 200, right: 80, background: "rgba(230,230,230,0.06)" }} />
 
+        {/* Formulário */}
         <form
           className="animate-fadeUp w-full z-10 flex flex-col"
           style={{ maxWidth: 340, fontFamily: "'DM Sans', sans-serif" }}
@@ -94,6 +96,7 @@ export default function NewPassword() {
             Digite e confirme sua nova senha para concluir a redefinição.
           </p>
 
+          {/* Campo de Senha */}
           <div style={{ marginBottom: 16 }}>
             <label style={{ display: "block", fontSize: "0.78rem", fontWeight: 500, color: "#DCDCDC", letterSpacing: "0.01em", marginBottom: 7 }}>
               Digite sua nova senha
@@ -125,6 +128,7 @@ export default function NewPassword() {
             </div>
           </div>
 
+          {/* Campo de Confirmação de Senha */}
           <div style={{ marginBottom: 24 }}>
             <label style={{ display: "block", fontSize: "0.78rem", fontWeight: 500, color: "#DCDCDC", letterSpacing: "0.01em", marginBottom: 7 }}>
               Digite sua senha novamente
@@ -156,6 +160,7 @@ export default function NewPassword() {
             </div>
           </div>
 
+          {/* Botão de Envio */}
           <button
             type="submit"
             ref={btnRef}
@@ -191,11 +196,12 @@ export default function NewPassword() {
             Cadastrar
           </button>
 
+          {/* Link Voltar ao Login */}
           <div style={{ textAlign: "center", marginTop: 22, fontSize: "0.85rem", color: "rgba(230,230,230,0.4)" }}>
             Lembrou a senha?{" "}
             <Link
               href="/Pages/Login"
-              style={{ color: "#E6E6E6", fontWeight: 500, textDecoration: "none", borderBottom: "1px solid rgba(230,230,230,0.3)", paddingBottom: 1 }}
+              style={{ color: "#E6E6E6", fontWeight: 500, textDecoration: "none", borderBottom: "1px solid rgba(230,230,230,0.3)", paddingBottom: 1, transition: "border-color 0.2s" }}
               onMouseEnter={(e) => (e.currentTarget.style.borderColor = "#E6E6E6")}
               onMouseLeave={(e) => (e.currentTarget.style.borderColor = "rgba(230,230,230,0.3)")}
             >

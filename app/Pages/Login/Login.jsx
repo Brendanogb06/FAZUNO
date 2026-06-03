@@ -90,8 +90,8 @@ export default function Login() {
                 />
               </div>
 
-              {/* Campo senha */}
-              <div className="mb-0">
+              {/* Campo senha - com mt-4 para distanciar levemente do e-mail */}
+              <div className="mb-0 mt-4">
                 <label className="block text-[0.78rem] font-medium text-[#DCDCDC] mb-[7px]">
                   Senha
                 </label>
@@ -117,6 +117,7 @@ export default function Login() {
                 </div>
               </div>
 
+              {/* Link esqueceu a senha */}
               <div className="flex justify-end mt-2 mb-[26px]">
                 <Link
                   href="/Pages/Recuperacao_de_senha"
